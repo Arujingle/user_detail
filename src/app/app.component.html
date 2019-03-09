@@ -1,0 +1,47 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome  {{ title }}!
+  <!-- </h1>
+   <img src = "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ski_trail_rating_symbol-blue_square.svg" width = "150px" height = "150px" >
+   <img src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/Disc_Plain_red_dark.svg"  width = "150px" heigth = "150px">
+
+<h2>Length of square is 5</h2>
+<h2>Length of circle is 5</h2>
+
+<button type = "button" (click) = "doTask()" > Show result</button>
+<h1>{{result}}</h1>
+
+<button type="button" (click) = "getPerimeter()">Show perimeter</button>
+<h1>{{perimeter}}</h1>
+
+
+<button type = "button" (click) = "getAreaCircle()">Show area of circle </button>
+<h1>{{areaCircle}}</h1> -->
+
+
+
+
+
+ <!-- <div class = "content" *ngFor="let post of posts">
+  <p class="title" (click)="getComments(post.id)">{{post.id}} {{post.title}}</p>
+  <p class="body">{{post.body}}</p>
+   <div class="comments" *ngFor="let comment of comments">
+     <p *ngIf="comment.postId === post.id">{{comment.name}}</p>
+   </div> -->
+   <!-- <div class = "content" *ngFor="let users of users">
+     <p>User id:{{users.id}}</p>
+     <p> User name:{{users.name}}</p>
+     <p>User username:{{users.username}}</p>
+   <br>
+   </div> -->
+   <app-user-list></app-user-list>
+
+
+   <nav>
+      <a routerLink="/userlist">Userlist</a>
+      <a routerLink="/detail">UserDetail</a>
+    </nav>
+    <router-outlet></router-outlet>
+
+

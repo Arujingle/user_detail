@@ -1,0 +1,18 @@
+<p>
+  task works!
+</p>
+
+<div [ngSwitch]="value">
+  <p *ngSwitchCase = "10">10</p>
+  <p *ngSwitchCase ="100">100</p>
+  <p *ngSwitchDefault>Default</p>
+
+
+</div>
+<button type = "button" (click)="getArea(Area)"> Show Result</button>
+<h1>Result:{{Area}}</h1>
+<button type = "button" (click) = "getPerimeter(Perimeter)">Show Perimeter</button>
+<h2>Perimeter of square is:{{Perimeter}}</h2>
+<button type = "button" (click) = "getCircleArea(circleArea)">Circle result</button>
+<h2>Circle Area {{circleArea}}</h2>
+

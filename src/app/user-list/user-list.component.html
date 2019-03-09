@@ -1,0 +1,8 @@
+
+  <button type="button" (click) = "getUser()">Get Post</button>
+<div class = "content" *ngFor="let users of users">
+    <p (click) = "onSelect(users)">User id:{{users.id}}</p>
+    <p (click)="getUser()"> User name:{{users.name}}</p>
+
+  <br>
+  </div>
